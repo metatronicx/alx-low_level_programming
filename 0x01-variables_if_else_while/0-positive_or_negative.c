@@ -18,6 +18,6 @@ int main(void)
 	if (n > 0)
 		printf("%d is greater than 0\n", n);
 	if (n < 0)
-		printf("%d is lesser than 0\n", n);
+		printf("%d is less than 0\n", n);
 	return (0);
 }
