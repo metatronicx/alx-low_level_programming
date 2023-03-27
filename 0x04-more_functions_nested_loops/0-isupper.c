@@ -6,15 +6,17 @@
 * Return: Always 0
 */
 
+
 int main(void)
 {
-	char c;
+    char c = 'A';
 
-	c = 'A';
-	if (isupper(c))
-	{
-		return (1);
-	} 
-	return (0);
-
+    if (isupper(c)) 
+    {
+       printf("%c: 1\n");
+    }
+    else 
+    {
+      printf("%c: 0\n");
+    }
 }
