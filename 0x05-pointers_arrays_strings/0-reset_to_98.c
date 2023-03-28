@@ -6,7 +6,7 @@
  * @n: Pointer to an integer variable
  *
  * Description:
- * This function takes a pointer to an integer variable as a parameter and updates
+ * Function takes a pointer to an integer variable and updates
  * the value of the variable to 98.
  *
  * Return: void
