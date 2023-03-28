@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _puts - Prints a string to stdout, followed by a new line
  *
