@@ -9,32 +9,18 @@ char *cap_string(char *str)
 {
 int i;
 
-if (str[0] >= 'a' && str[0] <= 'z')
-{
-str[0] -= 32;
-}
-
-for (i = 1; str[i] != '\0'; i++)
+for (i = 0; str[i] != '\0'; i++)
 {
 if (
-str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == ',' ||
-str[i] == ';' || str[i] == '.' || str[i] == '!' || str[i] == '?' ||
-str[i] == '\"' || str[i] == '(' || str[i] == ')' ||
-str[i] == '{' || str[i] == '}')
+i == 0 || str[i - 1] == ' ' || str[i - 1] == '\t' ||
+str[i - 1] == '\n' || str[i - 1] == ',' ||
+str[i - 1] == ';' || str[i - 1] == '.' ||
+str[i - 1] == '!' || str[i - 1] == '?' ||
+str[i - 1] == '"' || str[i - 1] == '(' ||
+str[i - 1] == ')' || str[i - 1] == '{' ||
+str[i - 1] == '}')
 {
-i++;
-
-if (str[i] >= 'a' && str[i] <= 'z')
-{
-str[i] -= 32;
-}
-}
-else
-{
-if (str[i] >= 'A' && str[i] <= 'Z')
-{
-str[i] += 32;
-}
+str[i] = (str[i] >= 'a' && str[i] <= 'z') ? str[i] - 32 : str[i];
 }
 }
 return (str);
