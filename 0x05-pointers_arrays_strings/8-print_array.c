@@ -5,6 +5,8 @@
  * @a: The array to be printed.
  * @n: The number of elements of the array to be printed.
  */
+#include <stdio.h>
+
 void print_array(int *a, int n)
 {
 int i;
