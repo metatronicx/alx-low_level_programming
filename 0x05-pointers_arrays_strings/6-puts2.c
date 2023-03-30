@@ -4,7 +4,6 @@
  *
  * @str: The string to be printed.
  */
-
 #include <stdio.h>
 
 void puts2(char *str)
