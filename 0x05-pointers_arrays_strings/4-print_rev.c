@@ -3,6 +3,8 @@
  *
  * @s: The string to be printed.
  */
+#include <stdio.h>
+
 void print_rev(char *s)
 {
 int i, len = 0;
