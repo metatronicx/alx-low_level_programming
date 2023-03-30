@@ -1,18 +1,20 @@
 /**
- * print_rev - prints a string in reverse order, followed by a new line
+ * print_rev - Prints a string in reverse followed by a new line.
  *
- * @s: pointer to the string to be printed
+ * @s: The string to be printed.
  */
 void print_rev(char *s)
 {
-int len = 0;
+int i, len = 0;
+
 while (s[len] != '\0')
 {
-    len++;
+len++;
 }
-for (int i = len - 1; i >= 0; i--)
+for (i = len - 1; i >= 0; i--)
 {
-    putchar(s[i]);
+_putchar(s[i]);
 }
-putchar('\n');
+
+_putchar('\n');
 }
