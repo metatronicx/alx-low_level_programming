@@ -1,5 +1,5 @@
 /**
- * _strncpy - Copies up to n bytes of the source string to the destination string.
+ * _strncpy - Copies source string to destination string.
  *
  * @dest: The destination string.
  * @src: The source string to be copied to dest.
