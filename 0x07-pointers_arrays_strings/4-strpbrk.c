@@ -4,24 +4,21 @@
  * @s: Pointer to the string to search
  * @accept: Pointer to the string of acceptable characters
  *
- * Return: Pointer to the byte in s that matches one of the bytes in accept
+ * Return: Pointer to the first matching byte in s, or NULL if no match is found
  */
 char *_strpbrk(char *s, char *accept)
 {
-while (*s)
-{
-char *a = accept;
+unsigned int i, j;
 
-while (*a)
+for (i = 0; s[i]; i++)
 {
-if (*s == *a)
+for (j = 0; accept[j]; j++)
 {
-return (s);
+if (s[i] == accept[j])
+{
+return (&s[i]);
 }
-a++;
 }
-
-s++;
 }
 
 return (NULL);
