@@ -6,6 +6,8 @@
  *
  * Return: Pointer to the beginning of the located substring, or NULL if not found
  */
+#include <stdio.h>
+
 char *_strstr(char *haystack, char *needle)
 {
 unsigned int i, j, k;
