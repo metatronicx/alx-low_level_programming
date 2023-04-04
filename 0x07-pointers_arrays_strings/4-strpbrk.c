@@ -7,6 +7,8 @@
  * Return: Pointer to the first matching byte in s,
  * or NULL if no match is found
  */
+#include <stdio.h>
+
 char *_strpbrk(char *s, char *accept)
 {
 unsigned int i, j;
