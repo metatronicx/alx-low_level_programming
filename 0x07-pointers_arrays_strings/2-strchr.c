@@ -6,6 +6,8 @@
  * Return: If the character c is found - a pointer to the first occurrence.
  *         If the character c is not found - NULL.
  */
+#include <stdio.h>
+
 char *_strchr(char *s, char c)
 {
 while (*s != '\0')
