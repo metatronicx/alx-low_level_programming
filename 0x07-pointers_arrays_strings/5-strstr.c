@@ -4,7 +4,8 @@
  * @haystack: Pointer to the string to search
  * @needle: Pointer to the substring to find
  *
- * Return: Pointer to the beginning of the located substring, or NULL if not found
+ * Return: Pointer to the beginning of the located substring,
+ * or NULL if not found
  */
 #include <stdio.h>
 
