@@ -7,7 +7,6 @@
  * Return: If size = 0 or the function fails - NULL.
  *         Otherwise - a pointer to the array.
  */
-#include <stdio.h>
 #include <stdlib.h>
 
 char *create_array(unsigned int size, char c)
