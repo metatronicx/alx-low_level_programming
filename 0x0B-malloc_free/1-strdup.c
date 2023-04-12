@@ -14,5 +14,5 @@ if (str == NULL)
 return (NULL);
 }
 *new_str = *str;
-return (*new_str);
+return (new_str);
 }
