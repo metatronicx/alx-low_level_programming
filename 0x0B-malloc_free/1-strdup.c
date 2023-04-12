@@ -5,6 +5,8 @@
  * Return: a pointer to the new string,
  * or NULL if str is NULL or malloc fails
  */
+#include <stdlib.h>
+
 char *_strdup(char *str)
 {
 char *dup;
