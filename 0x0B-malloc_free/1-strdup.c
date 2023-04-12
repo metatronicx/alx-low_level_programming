@@ -1,18 +1,36 @@
 /**
- * _strdup - Returns a pointer to a new string which is a duplicate of the string str.
+ * _strdup - duplicates a string in a new memory allocation
+ * @str: the string to duplicate
  *
- * @c: The char that the array should be initialized with.
+ * Return: a pointer to the new string,
+ * or NULL if str is NULL or malloc fails
  */
-
-#include <stdlib.h>
-
-char *_strdup(char *str) 
+char *_strdup(char *str)
 {
-char *new_str = malloc(sizeof(char));
+char *dup;
+int len, i;
+
 if (str == NULL)
 {
 return (NULL);
 }
-*new_str = *str;
-return (new_str);
+
+len = 0;
+while (str[len] != '\0')
+{
+len++;
+}
+
+dup = malloc((len + 1) * sizeof(char));
+if (dup == NULL)
+{
+return (NULL);
+}
+
+for (i = 0; i <= len; i++)
+{
+dup[i] = str[i];
+}
+
+return (dup);
 }
