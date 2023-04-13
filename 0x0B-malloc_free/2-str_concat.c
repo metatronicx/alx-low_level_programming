@@ -5,6 +5,8 @@
  *
  * Return: Pointer to the concatenated string, or NULL on failure.
  */
+#include <stdlib.h>
+
 char *str_concat(char *s1, char *s2)
 {
 char *concat_str;
