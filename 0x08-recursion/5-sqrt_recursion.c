@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * _sqrt_recursion_helper - Recursive helper function to find the square root
  * @n: The number to find the square root of
