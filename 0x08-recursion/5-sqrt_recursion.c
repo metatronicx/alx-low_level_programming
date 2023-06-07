@@ -12,25 +12,36 @@ int _sqrt_recursion(int n)
 	int start = 1;
 	int end = n;
 	int mid = (start + end) / 2;        
-    
-        if (n < 0)
-		return (-1); /* Negative number, no natural square root */
+	int sub_result = 0;
+	if (n < 0)
+	{
+		return (-1);
+	}
 
 	if (n == 0 || n == 1)
-		return (n); /* Base case: square root is the number itself */
-
+	{
+		return (n);
+	}
 
 	if (mid * mid == n)
-		return mid; /* Found the natural square root */
+	{
+		return mid;
+	}
 	else if (mid * mid > n)
-		return (_sqrt_recursion(n / 2)); /* Look in the lower half */
+	{
+		return (_sqrt_recursion(n / 2)); 
+	}
 	else
 	{
-		int sub_result = _sqrt_recursion(n - mid);
+		sub_result = _sqrt_recursion(n - mid);
 
 		if (sub_result == -1)
-			return (-1); /* No natural square root found */
-		else
-			return (mid + sub_result); /* Add the mid value */
+		{
+			return (-1);
+		}
+		else 
+		{
+			return (mid + sub_result);
+		}
 	}
 }
