@@ -8,16 +8,19 @@
  */
 int _sqrt_recursion(int n)
 {
-    if (n < 0)
-        return (-1); /* Negative number, no natural square root */
 
     int start = 0;
     int end = n;
+    int mid = 0;
+    int square = 0;
+    
+    if (n < 0)
+        return (-1); /* Negative number, no natural square root */
 
     while (start <= end)
     {
-        int mid = start + (end - start) / 2;
-        int square = mid * mid;
+        mid = start + (end - start) / 2;
+        square = mid * mid;
 
         if (square == n)
             return (mid); /* Found the natural square root */
