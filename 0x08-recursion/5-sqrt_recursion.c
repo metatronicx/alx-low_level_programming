@@ -25,7 +25,7 @@ int _sqrt_recursion(int n)
 
 	if (mid * mid == n)
 	{
-		return mid;
+		return (mid);
 	}
 	else if (mid * mid > n)
 	{
