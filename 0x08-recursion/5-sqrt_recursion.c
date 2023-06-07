@@ -13,7 +13,7 @@ int _sqrt_recursion(int n)
 	int end = n;
 	int mid = (start + end) / 2;
 	int sub_result = 0;
-	
+
 	if (n < 0)
 	{
 		return (-1);
