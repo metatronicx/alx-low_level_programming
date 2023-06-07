@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * _puts_recursion - Prints a string, followed by a new line.
  * @s: The string to be printed.
